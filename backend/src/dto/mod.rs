@@ -7,4 +7,4 @@ pub use response::{
     CreateSecretResponse,
     RevealResponse,
     ErrorResponse,
-}
+};
