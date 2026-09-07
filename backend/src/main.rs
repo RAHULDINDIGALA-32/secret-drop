@@ -1,4 +1,5 @@
-mod errors;
+pub mod dto;
+pub mod errors;
 
 fn main() {
     println!("Hello, world!");
