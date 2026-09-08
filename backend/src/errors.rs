@@ -9,7 +9,7 @@ use crate::dto::response::ErrorResponse;
 
 
 #[derive(thiserror::Error, Debug)]
-pub enum SeceretDropError {
+pub enum SecretDropError {
     #[error("Secret Not Found")]
     NotFound,
 
@@ -29,7 +29,7 @@ pub enum SeceretDropError {
     InternalError(#[from] AnyError),
 }
 
-impl IntoResponse for SeceretDropError {
+impl IntoResponse for SecretDropError {
     fn into_response(self) -> Response {
         let error = self.to_string();
 
