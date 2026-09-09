@@ -1,4 +1,5 @@
 pub mod dto;
+pub mod models;
 pub mod crypto;
 pub mod errors;
 
